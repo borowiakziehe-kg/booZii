@@ -1,0 +1,13 @@
+body                            { font-size: 10px; }
+img, object, embed              { max-width: 100%; }
+img                             { height: auto; }
+
+
+.centerize {
+    margin: 0 auto;
+}
+
+.stretch {
+    width: 100%;
+    float: left;
+}

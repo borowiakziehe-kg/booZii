@@ -1,0 +1,164 @@
+/*.............................................................................
+    Package: Menu
+    Description: Menu Helpers to quickly build up Menues
+    Author: Joe Ray Gregory
+    Lisence: LGPL
+.............................................................................*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global grid basics
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+/*----------------------------------------------------------------------------
+:Desc Defines the base style of the grid wrapper thats needed to hold the units
+-----------------------------------------------------------------------------*/
+.grid {
+    width: 100%;
+    max-width: 1140px;
+    min-width: 755px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/*----------------------------------------------------------------------------
+:Desc Defines the base style of each unit
+-----------------------------------------------------------------------------*/
+.u_1,
+.u_2,
+.u_3,
+.u_4,
+.u_5,
+.u_6,
+.u_7,
+.u_8,
+.u_9,
+.u_10,
+.u_11,
+.u_12 {
+    margin-left: 3.8%;
+    float: left;
+    min-height: 1px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+/*----------------------------------------------------------------------------
+:Desc Defines the width of each unit
+-----------------------------------------------------------------------------*/
+.u_1                            { width: 4.85%; }
+.u_2                            { width: 13.45%; }
+.u_3                            { width: 22.05%; }
+.u_4                            { width: 30.75%; }
+.u_5                            { width: 39.45%; }
+.u_6                            { width: 48%; }
+.u_7                            { width: 56.75%; }
+.u_8                            { width: 65.4%; }
+.u_9                            { width: 74.05%; }
+.u_10                           { width: 82.7%; }
+.u_11                           { width: 91.35%; }
+.u_12                           { width: 100%; }
+
+/*----------------------------------------------------------------------------
+:Desc Defines the width of each unit
+-----------------------------------------------------------------------------*/
+.grid [class^=u_]:first-child,
+.u_12                           { margin-left: 0; }
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global Styles only for resolutions under 1140px
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+@media only screen and (min-width: 480px), (max-width: 1139px) {
+
+    /*----------------------------------------------------------------------------
+    :Desc Defines the base style of the grid wrapper thats needed to hold the units
+    -----------------------------------------------------------------------------*/
+    .grid { padding: 0 20px; }
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global Styles only for resolutions til 1024spx
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+@media only screen and (max-device-width: 1024px) and (orientation:landscape), (max-width: 1024px) {
+    .hideat1024 {
+        display: none;
+    }
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Styles for tablets at portrait mode and browsers lower than 768px
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media only screen and (max-device-width: 768px) and (orientation:portrait), (max-width: 768px) {
+
+    /*----------------------------------------------------------------------------
+    :Desc Defines the base style of the grid wrapper thats needed to hold the units
+    -----------------------------------------------------------------------------*/
+    .grid {
+        min-width: 0;
+    }
+
+    /*----------------------------------------------------------------------------
+    :Desc Reset all unit styles
+    -----------------------------------------------------------------------------*/
+    .u_1,
+    .u_2,
+    .u_3,
+    .u_4,
+    .u_5,
+    .u_6,
+    .u_7,
+    .u_8,
+    .u_9,
+    .u_10,
+    .u_11,
+    .u_12 {
+        width: auto;
+        float: none;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hideat768 {
+        display: none;
+    }
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Only for tablets in portrait mode
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media only screen and (max-device-width: 768px) and (orientation:portrait) {
+    body {
+        font-size: 1.1em;
+    }
+
+    .hideat768portrait {
+        display: none;
+    }
+}
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Only for browsers lower than 480px width and smartphones
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 0.8em;
+        -webkit-text-size-adjust: none;
+    }
+
+    .hideat480 {
+        display: none;
+    }
+}
