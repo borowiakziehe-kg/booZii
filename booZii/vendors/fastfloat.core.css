@@ -1,0 +1,41 @@
+/*.............................................................................
+    Package: Menu
+    Description: Menu Helpers to quickly build up Menues
+    Author: Joe Ray Gregory
+    Lisence: LGPL
+.............................................................................*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Position Helpers
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.v-right                        { float: right; }
+.v-left                         { float: left; }
+
+.v-rel                          { position: relative; }
+.v-abs                          { position: absolute; }
+
+.v-bl                           { display: block; }
+.v-in                           { display: inline; }
+.v-inbl                         { display: inline-block; }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Background Helpers
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+.bg-x                           { background-repeat: repeat-x; }
+.bg-y                           { background-repeat: repeat-y; }
+
+
+.bg-c                           { background-position: 50% 50%; }
+.bg-c-t                         { background-position: 50% 0%; }
+.bg-c-l                         { background-position: 0% 50%; }
+.bg-c-r                         { background-position: 100% 50%; }
+.bg-c-b                         { background-position: 50% 100%; }
+
+.bg-c,
+.bg-c-l,
+.bg-c-t,
+.bg-c-b,
+.bg-c-r,
+.bg                             { background-repeat: no-repeat; }

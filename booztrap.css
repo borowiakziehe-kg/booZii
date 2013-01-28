@@ -11,8 +11,9 @@
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 
-@import "booZii/normalize.css";
+@import "booZii/vendors/normalize.css";
 @import "booZii/grid-12.css";
 @import "booZii/core.css";
-@import "booZii/navigation.css";
+@import "booZii/vendors/fastfloat.core.css";
+@import "booZii/vendors/fastfloat.navigation.css";
 @import "booZii/themes/moonwalk/theme.css";

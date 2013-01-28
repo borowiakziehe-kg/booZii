@@ -54,6 +54,17 @@ p { font-size: 1.4em; }
     padding: 0.5em;
 }
 
+.submenu ul {
+    background-color: #323436;
+    width: 200px;
+}
+
+.submenu ul a {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0.5em;
+}
+
 #content [class^=u_] {
     background-color: #fff;
     margin-bottom: 3.8%;
@@ -146,6 +157,16 @@ iframe{height: 350px;}
         display: block;
         border-bottom: 1px solid #494b4d;
         padding: 10px 30px;
+    }
+
+    #nav-main .submenu ul {
+        position: static;
+        width: 270px;
+    }
+
+    #nav-main .submenu li {
+        padding-left: 3em;
+        background-color: #54585b;
     }
 }
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/

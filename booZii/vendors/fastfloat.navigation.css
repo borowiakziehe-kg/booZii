@@ -1,0 +1,44 @@
+/*.............................................................................
+    Package: Menu
+    Description: Menu Helpers to quickly build up Menues
+    Author: Joe Ray Gregory
+    Author: Stefan Melz
+    Lisence: LGPL
+.............................................................................*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global Menu Class
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.nav-h:after                { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+
+.nav-h a,
+.nav-v a                    { display: block; text-decoration: none;  }
+
+.nav-h > ul,
+.nav-v > ul,
+.submenu > ul               { list-style: none; margin: 0; padding: 0; }
+
+.nav-h li,
+.nav-v li                   { float: left; }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Method for horizontal menu
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.nav-h > ul                    {  }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Method for vertical menu
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.nav-v li                       { clear: both; width: 100%; }
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Method flyout for flyout menues
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.flyout-v .submenu ul,
+.flyout-h .submenu ul           { position: absolute; left: -9999em; }
+
+.flyout-v .submenu:hover ul,
+.flyout-h .submenu:hover ul     { left: auto; }
+
+
+.flyout-v .submenu li           { clear: both; width: 100%; }

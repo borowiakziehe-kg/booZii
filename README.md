@@ -47,4 +47,19 @@ At the moment we supporting the follwing browsers:
 * Firefox
 * Opera
 
+### Fastfloat Core ###
 
+#### Background Heplers ####
+
+You often need to place a background to center, to top and on. The background helpers will help you to write less code and bring you more flexibity. bg helpers all starts with the bg- prefix.
+
+Repeat helpers
+.bg-x   = Repeat the background on x axe = background-repeat: repeat-x
+.bg-y   = Repeat the background on x axe = background-repeat: repeat-y
+
+Center helpers
+.bg-c   = Set the background to center = background-position: 50% 50%
+.bg-c-t = Set the background to vertical center and y top = background-position: 50% 0%
+.bg-c-l = Set the background to vertical left and y center = background-position: 0% 50%
+.bg-c-r = Set the background to vertical right and y center = background-position: 100% 50%
+.bg-c-b = Set the background to vertical center and y bottom = background-position: 50% 100%
