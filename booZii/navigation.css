@@ -8,6 +8,7 @@
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     Global Menu Class
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+.nav-h:after                   {content: "."; display: block;height: 0;clear: both;visibility: hidden;}
 .nav-h li                      { float: left; }
 .nav-h a                       { display: block; text-decoration: none; }
 

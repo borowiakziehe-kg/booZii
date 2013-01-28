@@ -1,7 +1,7 @@
 body                            { font-size: 10px; }
 img, object, embed              { max-width: 100%; }
 img                             { height: auto; }
-
+iframe                          { width: 100%; }
 
 .centerize {
     margin: 0 auto;
