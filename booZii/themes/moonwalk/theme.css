@@ -14,6 +14,8 @@
         Baseline: 10px
         Used fonts: Arial
 .............................................................................*/
+@import url('vendors/slider/style.css');
+
 body {
     background-color: #ebebeb;
     color: #323436;
@@ -71,7 +73,70 @@ p { font-size: 1.4em; }
     padding: 1em;
 }
 
-iframe{height: 350px;}
+iframe {
+    height: 350px;
+}
+
+.bz-tooltip {
+    cursor: help;
+    color: #db0028;
+}
+
+.tip-wrap {
+    background-color: #323436;
+    color: #fff;
+    padding: 1.2em;
+    border-radius: 0.5em;
+    width: 20%;
+}
+
+.tip-title {
+    font-size: 1.6em;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.tip-text {
+    font-size: 1.4em;
+}
+
+.button.red {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: -moz-linear-gradient(
+        top,
+        #fa5f7b 0%,
+        #db0028 25%,
+        #bd0023 50%,
+        #a80a27 75%,
+        #db0028);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#fa5f7b),
+        color-stop(0.25, #db0028),
+        color-stop(0.50, #bd0023),
+        color-stop(0.75, #a80a27),
+        to(#db0028));
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    border: 0px solid #171717;
+    -moz-box-shadow:
+        0px 1px 3px rgba(000,000,000,0),
+        inset 0px 0px 10px rgba(219,0,40,0.3);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(000,000,000,0),
+        inset 0px 0px 10px rgba(219,0,40,0.3);
+    box-shadow:
+        0px 1px 3px rgba(000,000,000,0),
+        inset 0px 0px 10px rgba(219,0,40,0.3);
+    text-shadow:
+        0px -1px 0px rgba(000,000,000,0.4),
+        0px 1px 0px rgba(255,255,255,0);
+}
+
+
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     Global Styles only for resolutions under 1140px
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/

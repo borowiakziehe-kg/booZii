@@ -16,4 +16,6 @@
 @import "booZii/core.css";
 @import "booZii/vendors/fastfloat.core.css";
 @import "booZii/vendors/fastfloat.navigation.css";
+@import "booZii/vendors/spinslider/spin/spin.css";
+@import "booZii/themes/moonwalk/vendors/modal/css/styles.css";
 @import "booZii/themes/moonwalk/theme.css";

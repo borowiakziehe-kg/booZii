@@ -1,0 +1,165 @@
+/* Basic Config
+   ================================================== */
+.inner-slideswrap {
+    box-sizing: border-box;
+    width: 100%;
+    height: 288px;
+    background: #000 url('img/loading.gif') no-repeat center center;
+}
+
+.inner-slideswrap > div {
+    background: #fff;
+}
+
+
+
+
+/* TIMER
+   ================================================== */
+
+.timer {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: .6;
+    cursor: pointer;
+    z-index: 1001; }
+
+.rotator {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    background: url(img/rotator-black.png) no-repeat;
+    z-index: 3; }
+
+.mask {
+    display: block;
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    overflow: hidden; }
+
+.rotator.move {
+    left: 0 }
+
+.mask.move {
+    width: 40px;
+    left: 0;
+    background: url(img/timer-black.png) repeat 0 0; }
+
+.pause {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(img/pause-black.png) no-repeat;
+    z-index: 4;
+    opacity: 0; }
+
+.pause.active {
+    background: url(img/pause-black.png) no-repeat 0 -40px }
+
+.timer:hover span.pause,
+.pause.active {
+    opacity: 1
+}
+
+
+/* CAPTIONS
+   ================================================== */
+
+.spin-caption {
+    display: none;
+    font-family: "HelveticaNeue", "Helvetica-Neue", Helvetica, Arial, sans-serif;
+}
+
+.spin-wrapper .spin-caption {
+    background: #000;
+    background: rgba(0,0,0,.6);
+    z-index: 1000;
+    color: #fff;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 13px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* DIRECTIONAL NAV
+   ================================================== */
+
+.slider-nav {
+    display: block
+}
+
+.slider-nav span {
+    width: 78px;
+    height: 100px;
+    text-indent: -9999px;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    margin-top: -50px;
+    cursor: pointer;
+}
+
+.slider-nav span.right {
+    background: url(img/right-arrow.png);
+    right: 0;
+}
+
+.slider-nav span.left {
+    background: url(img/left-arrow.png);
+    left: 0;
+}
+
+/* BULLET NAV
+   ================================================== */
+
+.spin-bullets {
+    position: absolute;
+    z-index: 100;
+    list-style: none;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -50px;
+    padding: 0; }
+
+.spin-bullets li {
+    float: left;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #999;
+    text-indent: -9999px;
+    background-color: #323436;
+    border-radius: 2px;
+    width: 15px;
+    height: 15px;
+    overflow: hidden; }
+
+.spin-bullets li.active {
+    color: #222;
+    background-color: #db0028; }
+
+.spin-bullets li.has-thumb {
+    background: none;
+    width: 100px;
+    height: 75px; }
+
+.spin-bullets li.active.has-thumb {
+    background-position: 0 0;
+    border-top: 2px solid #000; }
