@@ -1,0 +1,5 @@
+@define {
+    gridWidth:          1200;   /* Gesamtbreite des Container */
+    columnCount:        12;     /* Anzahl der Spalten */
+    gutterColumnRatio:  0.7;    /* Verhältnis Gutter- zu Spalten-Breite */
+}
