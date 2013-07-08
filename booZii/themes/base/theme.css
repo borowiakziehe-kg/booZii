@@ -1,0 +1,151 @@
+/*.............................................................................
+    BooZii - A responsive bootstrap
+    Package: Theme moonwalk
+    Description: Theme file fpr BooZii
+    Author: Joe Ray Gregory @ borowiakziehe KH
+
+    colors:
+        darkgrey: #323436
+        white: #fff
+        lightgrey: #cfcfcf
+
+    font Hint:
+        Type: em
+        Baseline: 10px
+        Used fonts: Arial
+.............................................................................*/
+body {
+    background-color: #ebebeb;
+    color: #323436;
+}
+
+#header {
+    border-top: 2.3em solid #db0028;
+    background-color: #fff;
+    padding: 3em 0;
+    box-shadow: inset 0px 0px 10px 1px #cfcfcf;
+}
+
+/* Content */
+
+h1 { font-size: 3.8em; lin-height: 3.5em; background-color: #fff; padding: 2em; }
+h2 { font-size: 1.8em; }
+p { font-size: 1.4em; }
+
+
+#header {
+    margin-bottom: 3.8%;
+}
+
+#nav-main {
+    padding-top: 3em;
+    float: right;
+}
+
+.item {
+    margin-right: 1em;
+}
+
+.link {
+    background-color: #323436;
+    border-radius: 0.5em;
+    color: #fff;
+    font-size: 1.8em;
+    padding: 0.5em;
+}
+
+#content [class^=u_] {
+    background-color: #fff;
+    margin-bottom: 3.8%;
+    padding: 1em;
+}
+
+iframe{height: 350px;}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global Styles only for resolutions under 1140px
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+@media only screen and (min-width: 480px), (max-width: 1139px) {
+
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global Styles only for resolutions til 1024spx
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+@media only screen and (max-device-width: 1024px) and (orientation:landscape), (max-width: 1024px) {
+
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Styles for tablets at portrait mode and browsers lower than 768px
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media only screen and (max-device-width: 768px) and (orientation:portrait), (max-width: 768px) {
+
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Only for tablets in portrait mode
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media only screen and (max-device-width: 768px) and (orientation:portrait) {
+
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Only for browsers lower than 480px width and smartphones
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@media only screen and (max-width: 480px) {
+    .nav-h {
+        background: url('img/icon_nav.png') no-repeat #323436 50% 50%;
+        width: 4em;
+        height: 4em;
+        position: absolute;
+        right: 2em;
+        top: 5em;
+        border-radius: 5px;
+    }
+
+    #nav-main {
+        position: absolute;
+        left: -9999em;
+        background-color: #323436;
+        padding: 0;
+        width: 300px;
+        top: 0px;
+        border-radius: 5px;
+    }
+
+    .nav-h:hover #nav-main {
+        left: auto;
+        right: 34px;
+    }
+
+    .item {
+        clear: both;
+        width: 100%;
+    }
+
+    .link {
+        background: none;
+        border-radius: 0em;
+        color: #fff;
+        font-size: 1.8em;
+        padding: 0em;
+        display: block;
+        border-bottom: 1px solid #494b4d;
+        padding: 10px 30px;
+    }
+}
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/

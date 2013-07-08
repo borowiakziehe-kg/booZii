@@ -1,0 +1,591 @@
+/*
+ * CSS-Crush(ed) on 2013-07-08 13:12:22 +0200
+ * http://github.com/peteboere/css-crush (v1.10.0)
+ */
+/*.............................................................................
+    BooZii - A responsive bootstrap
+    Package: Bootstrap
+    Description: constructor file
+    Author: Joe Ray Gregory @ slashworks
+    Lisence: LGPL
+.............................................................................*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Imports
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/* basic and required imports */
+
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+    }
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    }
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+    }
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+
+[hidden] {
+    display: none;
+    }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    }
+
+/*
+ * Removes default margin.
+ */
+
+body {
+    margin: 0;
+    }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+    }
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+    }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    }
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+    }
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+    }
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+    }
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+    }
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace,serif;
+    font-size: 1em;
+    }
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    }
+
+/*
+ * Sets consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    }
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+    }
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    }
+
+sup {
+    top: -.5em;
+    }
+
+sub {
+    bottom: -.25em;
+    }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+    }
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+    }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+    }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/*
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+    }
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0;
+    padding: 0;
+    }
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    }
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+    }
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+    }
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+input[disabled] {
+    cursor: default;
+    }
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    }
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    }
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+    }
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+    }
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/*
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+
+body {
+    font-size: 10px;
+    }
+
+img,
+object,
+embed {
+    max-width: 100%;
+    }
+
+img {
+    height: auto;
+    }
+
+iframe {
+    width: 100%;
+    }
+
+/*.............................................................................
+    Package: Menu
+    Description: Menu Helpers to quickly build up Menues
+    Author: Joe Ray Gregory
+    Lisence: LGPL
+.............................................................................*/
+
+/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+    Global grid basics
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/*----------------------------------------------------------------------------
+:Desc Defines the base style of the grid wrapper thats needed to hold the units
+-----------------------------------------------------------------------------*/
+
+.grid {
+    width: 100%;
+    max-width: 1600px;
+    min-width: 755px;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+/*----------------------------------------------------------------------------
+:Desc Defines the base style of each unit
+-----------------------------------------------------------------------------*/
+
+.u_1,
+.u_2,
+.u_3,
+.u_4,
+.u_5,
+.u_6,
+.u_7,
+.u_8,
+.u_9,
+.u_10,
+.u_11,
+.u_12,
+.u_13,
+.u_14,
+.u_15,
+.u_16,
+.u_17,
+.u_18,
+.u_19,
+.u_20,
+.u_21,
+.u_22,
+.u_23,
+.u_24 {
+    margin-left: 2.22222%;
+    margin-right: 2.22222%;
+    float: left;
+    min-height: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    }
+
+/*----------------------------------------------------------------------------
+:Desc Defines the width of each unit
+-----------------------------------------------------------------------------*/
+
+.u_1 {
+    width: 3.88889%;
+    }
+
+.u_2 {
+    width: 12.22222%;
+    }
+
+.u_3 {
+    width: 20.55555%;
+    }
+
+.u_4 {
+    width: 28.88888%;
+    }
+
+.u_5 {
+    width: 37.22221%;
+    }
+
+.u_6 {
+    width: 45.55554%;
+    }
+
+.u_7 {
+    width: 53.88887%;
+    }
+
+.u_8 {
+    width: 62.2222%;
+    }
+
+.u_9 {
+    width: 70.55553%;
+    }
+
+.u_10 {
+    width: 78.88886%;
+    }
+
+.u_11 {
+    width: 87.22219%;
+    }
+
+.u_12 {
+    width: 95.55552%;
+    }
+
+.u_13 {
+    width: 103.88885%;
+    }
+
+.u_14 {
+    width: 112.22218%;
+    }
+
+.u_15 {
+    width: 120.55551%;
+    }
+
+.u_16 {
+    width: 128.88884%;
+    }
+
+.u_17 {
+    width: 137.22217%;
+    }
+
+.u_18 {
+    width: 145.5555%;
+    }
+
+.u_19 {
+    width: 153.88883%;
+    }
+
+.u_20 {
+    width: 162.22216%;
+    }
+
+.u_21 {
+    width: 170.55549%;
+    }
+
+.u_22 {
+    width: 178.88882%;
+    }
+
+.u_23 {
+    width: 187.22215%;
+    }
+
+.u_24 {
+    width: 195.55548%;
+    }
+
+/*----------------------------------------------------------------------------
+:Desc Defines the width of each unit
+-----------------------------------------------------------------------------*/
+
+.grid [class^=u_]:first-child,
+.u_12,
+.first {
+    clear: both;
+    }
+
+/* theme dependent imports */
+
+@import "themes/base" "/grid-config.css";
+@import "themes/base""?s29?/base/theme.css";
+@import "themes/base""?s29?/base/helpers.css";
+@import "themes/base""?s29?/base/grid-media-queries.css";

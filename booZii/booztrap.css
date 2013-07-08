@@ -2,7 +2,7 @@
     BooZii - A responsive bootstrap
     Package: Bootstrap
     Description: constructor file
-    Author: Joe Ray Gregory @ borowiakziehe KH
+    Author: Joe Ray Gregory @ slashworks
     Lisence: LGPL
 .............................................................................*/
 
@@ -10,9 +10,13 @@
     Imports
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+/* basic and required imports */
+@import "normalize.css";
+@import "core.css";
+@import "grid.css";
 
-@import "booZii/normalize.css";
-@import "booZii/grid-12.css";
-@import "booZii/core.css";
-@import "booZii/navigation.css";
-@import "booZii/themes/moonwalk/theme.css";
+/* theme dependent imports */
+@import "themes/base/grid-config.css";
+@import "themes/base/theme.css";
+@import "themes/base/helpers.css";
+@import "themes/base/grid-media-queries.css";

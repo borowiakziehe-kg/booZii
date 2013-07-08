@@ -1,75 +1,3 @@
-/*.............................................................................
-    Package: Menu
-    Description: Menu Helpers to quickly build up Menues
-    Author: Joe Ray Gregory
-    Lisence: LGPL
-.............................................................................*/
-
-/*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-    Global grid basics
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
-
-
-/*----------------------------------------------------------------------------
-:Desc Defines the base style of the grid wrapper thats needed to hold the units
------------------------------------------------------------------------------*/
-.grid {
-    width: 100%;
-    max-width: 1140px;
-    min-width: 755px;
-    overflow: hidden;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
-/*----------------------------------------------------------------------------
-:Desc Defines the base style of each unit
------------------------------------------------------------------------------*/
-.u_1,
-.u_2,
-.u_3,
-.u_4,
-.u_5,
-.u_6,
-.u_7,
-.u_8,
-.u_9,
-.u_10,
-.u_11,
-.u_12 {
-    margin-left: 3.8%;
-    float: left;
-    min-height: 1px;
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
-}
-
-/*----------------------------------------------------------------------------
-:Desc Defines the width of each unit
------------------------------------------------------------------------------*/
-.u_1                            { width: 4.85%; }
-.u_2                            { width: 13.45%; }
-.u_3                            { width: 22.05%; }
-.u_4                            { width: 30.75%; }
-.u_5                            { width: 39.45%; }
-.u_6                            { width: 48%; }
-.u_7                            { width: 56.75%; }
-.u_8                            { width: 65.4%; }
-.u_9                            { width: 74.05%; }
-.u_10                           { width: 82.7%; }
-.u_11                           { width: 91.35%; }
-.u_12                           { width: 100%; }
-
-/*----------------------------------------------------------------------------
-:Desc Defines the width of each unit
------------------------------------------------------------------------------*/
-.grid [class^=u_]:first-child,
-.u_12,
-.first                          { margin-left: 0; clear: both; }
-
-
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
     Global Styles only for resolutions under 1140px
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -80,7 +8,6 @@
     /*----------------------------------------------------------------------------
     :Desc Defines the base style of the grid wrapper thats needed to hold the units
     -----------------------------------------------------------------------------*/
-    .grid { padding: 0 20px; }
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

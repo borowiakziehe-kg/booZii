@@ -2,7 +2,15 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="booztrap.css" media="all">
+    <?php
+        require_once 'vendors/css-crush/CssCrush.php';
+        $options = array(
+            'debug' => true,
+            'minify' => false,
+            'versioning' => true
+        );
+        echo csscrush_tag( '/booZii/booztrap.css',$options );
+    ?>
     <script src="js/mootools-core-uncompressed.js"></script>
     <script src="js/mootools-more-uncompressed.js"></script>
     <script src="js/responsivehelpers.js"></script>
