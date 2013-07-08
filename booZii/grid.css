@@ -1,11 +1,3 @@
-@define {
-    gridWidth:          1600;   /* Gesamtbreite des Container */
-    columnCount:        12;     /* Anzahl der Spalten */
-    gutterColumnRatio:  0.4;    /* Verhältnis Gutter- zu Spalten-Breite */
-    gutterWidth: math( ($(gridWidth) * $(gutterColumnRatio)) / ($(columnCount) * $(columnCount)) );
-    columnWidth: math( (100/$(columnCount)) - $(gutterWidth) )%;
-}
-
 /*.............................................................................
     Package: Menu
     Description: Menu Helpers to quickly build up Menues
@@ -17,6 +9,17 @@
     Global grid basics
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+
+/*----------------------------------------------------------------------------
+:Desc Define some standard grid values and prepare use of variables with css crush
+-----------------------------------------------------------------------------*/
+@define {
+    gridWidth:          1200;   /* Gesamtbreite des Container */
+    columnCount:        12;     /* Anzahl der Spalten */
+    gutterColumnRatio:  0.4;    /* Verhältnis Gutter- zu Spalten-Breite */
+    gutterWidth: math( ($(gridWidth) * $(gutterColumnRatio)) / ($(columnCount) * $(columnCount)) );
+    columnWidth: math( (100/$(columnCount)) - $(gutterWidth) )%;
+}
 
 /*----------------------------------------------------------------------------
 :Desc Defines the base style of the grid wrapper thats needed to hold the units
@@ -100,4 +103,6 @@
 -----------------------------------------------------------------------------*/
 .grid [class^=u_]:first-child,
 .u_12,
-.first                          { clear: both; }
+.first {
+    clear: both;
+}
